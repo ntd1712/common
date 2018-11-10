@@ -17,7 +17,7 @@ doctrine: # http://symfony.com/doc/master/bundles/DoctrineBundle/configuration.h
     connections:
       default:
         dbname: ~
-        host: localhost
+        host: 127.0.0.1
         port: ~
         user: root
         password: ~
