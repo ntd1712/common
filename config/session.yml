@@ -1,0 +1,9 @@
+session: # http://php.net/manual/en/session.configuration.php
+  save_path: /path/to/session/dir
+  name: CHAOS_PHPSESSID
+  save_handler: files
+  cookie_lifetime: 7200 # in seconds
+  cookie_path: /
+  cookie_domain: ~
+  cookie_secure: false
+  cookie_httponly: true

@@ -1,0 +1,3 @@
+multitenant: # TODO
+  enabled: false
+  keymap: ApplicationKey

@@ -1,0 +1,21 @@
+mail: # http://symfony.com/doc/current/reference/configuration/swiftmailer.html
+  default_mailer: default
+  mailers:
+    default:
+      transport: smtp
+      username: ~
+      password: ~
+      host: localhost
+      port: false
+      encryption: tls
+      auth_mode: login
+      spool:
+        type: file
+        path: /path/to/spool/dir
+      sender_address: ~
+      antiflood:
+        threshold: 99
+        sleep: 0
+      delivery_addresses: []
+      disable_delivery: ~
+      logging: ~

@@ -1,0 +1,45 @@
+{
+  "name": "chaos/common",
+  "description": "The CHAOS library.",
+  "type": "library",
+  "keywords": ["ntd1712", "chaos", "common", "ddd"],
+  "homepage": "https://github.com/ntd1712",
+  "license": "MIT",
+  "authors": [
+    {"name": "ntd1712", "email": "ntd1712@hotmail.com"}
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "symfony/polyfill-php55": "~1.10",
+    "symfony/config": "~2.8",
+    "symfony/proxy-manager-bridge": "~2.8",
+    "symfony/yaml": "~2.8",
+    "zendframework/zend-eventmanager": "2.5.1",
+    "zendframework/zend-form": "2.5.1",
+    "zendframework/zend-i18n": "2.5.1",
+    "zendframework/zend-db": "2.5.1",
+    "doctrine/orm": "2.5.2",
+    "m1/vars": "~1.1",
+    "ramsey/uuid": "~3.8"
+  },
+  "require-dev": {
+    "jasny/config": "~1.3",
+    "jms/serializer": "~1.1.0",
+    "laravel/framework": "~5.0.35"
+  },
+  "autoload": {
+    "psr-4": {
+      "Chaos\\": "src/"
+    },
+    "files": [
+      "src/defines.php",
+      "src/functions.php"
+    ],
+    "exclude-from-classmap": [
+      "/test/"
+    ]
+  },
+  "archive": {
+    "exclude": ["/*.*", "!/composer.json", "!/README.md", "test", "vendor"]
+  }
+}

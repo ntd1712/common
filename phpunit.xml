@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         verbose="true">
+    <testsuites>
+        <testsuite name="all">
+            <directory suffix="Test.php">tests/Bridge</directory>
+            <directory suffix="Test.php">tests/Component</directory>
+            <directory suffix="Test.php">tests/Foundation</directory>
+        </testsuite>
+        <testsuite name="bridge">
+            <directory suffix="Test.php">tests/Bridge</directory>
+        </testsuite>
+        <testsuite name="component">
+            <directory suffix="Test.php">tests/Component</directory>
+        </testsuite>
+        <testsuite name="foundation">
+            <directory suffix="Test.php">tests/Foundation</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <const name="PHPUNIT_TESTSUITE" value="true"/>
+    </php>
+</phpunit>
