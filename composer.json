@@ -9,7 +9,6 @@
     {"name": "ntd1712", "email": "ntd1712@hotmail.com"}
   ],
   "require": {
-    "php": ">=5.4.0",
     "symfony/polyfill-php55": "~1.10",
     "symfony/config": "~2.8",
     "symfony/proxy-manager-bridge": "~2.8",
@@ -18,7 +17,8 @@
     "zendframework/zend-form": "2.5.1",
     "zendframework/zend-i18n": "2.5.1",
     "zendframework/zend-db": "2.5.1",
-    "doctrine/orm": "2.5.2",
+    "doctrine/common": ">=2.5-dev,<2.6-dev",
+    "doctrine/orm": "2.5.6",
     "m1/vars": "~1.1",
     "ramsey/uuid": "~3.8"
   },
