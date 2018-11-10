@@ -40,6 +40,6 @@
     ]
   },
   "archive": {
-    "exclude": ["/*.*", "!/composer.json", "!/README.md", "test", "vendor"]
+    "exclude": ["*",".*","!/config/*","!/src/*"]
   }
 }
